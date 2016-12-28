@@ -13,6 +13,8 @@ function onClick(){
 	/* http://stackoverflow.com/questions/195951/change-an-elements-class-with-javascript */
 	//if(!(hero).className.match(/(?:^|\s)trans(?!\S)/) ) { hero.className += "trans"; }
 		
+	//or: http://stackoverflow.com/questions/195951/change-an-elements-class-with-javascript
+	
 	counter++;
 	if(counter > 11){
 		//if((hero).className.match(/(?:^|\s)trans(?!\S)/)){ hero.className.replace( /(?:^|\s)trans(?!\S)/g , '' ); }
@@ -92,3 +94,5 @@ function onClick(){
 		}
 
 }
+
+
