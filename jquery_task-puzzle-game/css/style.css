@@ -1,0 +1,169 @@
+body {
+  background: url(../img/adamcex_background.jpg) #000;
+  background-size:cover;
+}
+form#loginForm {
+  background: -webkit-linear-gradient(bottom, #96dee7, #EEEEEE 175px);
+  background: -moz-linear-gradient(bottom, #96dee7, #EEEEEE 175px);
+  background: linear-gradient(bottom, #96dee7, #EEEEEE 175px);
+  margin: auto;
+  margin-top: 20px;
+  position: relative;
+  width: 420px;
+  height: 240px;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 24px;
+  font-weight: bold;
+  color: #09C;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid #999;
+  border: inset 1px solid #333;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+input {
+  width: 375px;
+  display: block;
+  border: 1px solid #999;
+  height: 25px;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  padding-left: 5px;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+input::-webkit-input-placeholder       {text-indent: 0px;   transition: text-indent 0.3s ease;}
+input::-moz-placeholder                {text-indent: 0px;   transition: text-indent 0.3s ease;}
+input:-moz-placeholder                 {text-indent: 0px;   transition: text-indent 0.3s ease;}
+input:-ms-input-placeholder            {text-indent: 0px;   transition: text-indent 0.3s ease;}
+input:focus::-webkit-input-placeholder {text-indent: 500px; transition: text-indent 0.3s ease;}
+input:focus::-moz-placeholder          {text-indent: 500px; transition: text-indent 0.3s ease;}
+input:focus:-moz-placeholder           {text-indent: 500px; transition: text-indent 0.3s ease;}
+input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-indent 0.3s ease;}
+
+#submit {
+  width: 100px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background: #09C;
+  color: #fff;
+  font-family: Tahoma, Geneva, sans-serif;
+  height: 30px;
+  border-radius: 15px;
+  border: 1p solid #999;
+}
+
+#submit:hover {
+  background: #fff;
+  color: #09C;
+}
+
+#result {
+  display: none;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table#gameField {
+  width: 500px;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 0.75);
+  border: 1px solod;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+table#gameField tr td {
+  text-align:center; 
+  vertical-align:middle;
+  font-size: 1.5rem;
+}
+#scores {
+  text-align:center; 
+  vertical-align:middle;
+  font-size: 1.5rem;
+  color: white;
+  background: #00080b;
+  border-radius: 10px;
+  width: 500px;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#reset { 
+  background: #b5fdff;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Tahoma, Geneva, sans-serif;
+  height: 30px;
+  border-radius: 15px;
+  border: 1p solid #999;
+}
+.restoredColour {
+  background-color: rgba(255, 255, 255, 0.75); 
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; 
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+  form#loginForm {
+      margin-top: 10px;
+      position: relative;
+      width: 280px;
+      height: 200px;
+      font-family: Tahoma, Geneva, sans-serif;
+      font-size: 1rem;
+      font-style: italic;
+      line-height: 12px;
+      font-weight: bold;
+      color: #09C;
+      text-decoration: none;
+      border-radius: 5px;
+      padding-left: 15px;  
+  }
+  input {
+      width: 250px;
+      border: 1px solid #999;
+      height: 20px;
+      font-size: 1rem;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+    #submit {
+      right: 25px;
+      bottom: 5px;
+    }
+    table#gameField {
+      width: 300px;
+      height: 300px;
+    }
+}
+
+@media (min-width: 1200px) {
+      table#gameField {
+      width: 720px;
+      height: 720px;
+    }
+}
+
+/*
+  Created by Alex Pilugin 02.11.2016.
+*/

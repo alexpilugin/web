@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="author" content="Alex Pilugin">
+
+  <title> Alex Pilugin. Game for Interview</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="lib/jquery-3.1.1.min.js"></script>
+  <script src="js/main.js"></script>
+  </head>
+   <body>
+  <div id="content">
+    <form id="loginForm" action="" hidden="hidden">
+      <div>
+        <h1>Please insert your details:</h1>
+      <label for="name"><span>Your name:</span></label>
+      <input id="name" type="text" name="name" placeholder="Your name"/>
+
+      <label for="email"><span>Email Address:</span></label>
+      <input id="email" type="text" name="email" placeholder="Email Address"/>
+
+      <input type="button" id="submit" value="Submit" onclick="showGameField(); return false;"/>
+      <h3 id="result"></h3>
+      </div>
+    </form>
+
+    <table id="gameField" hidden="hidden">
+  <tr>
+    <td>&nbsp</td>
+    <td>&nbsp</td>
+    <td>&nbsp</td>
+    <td>&nbsp</td>
+    <td>&nbsp</td>
+  </tr>
+  <tr>
+    <td>&nbsp</td>
+    <td>&nbsp</td>
+    <td>&nbsp</td>
+    <td>&nbsp</td>
+    <td>&nbsp</td>
+  </tr>
+  <tr>
+    <td>&nbsp</td>
+    <td>&nbsp</td>
+    <td>&nbsp</td>
+    <td>&nbsp</td>
+    <td>&nbsp</td>
+  </tr>
+  <tr>
+    <td>&nbsp</td>
+    <td>&nbsp</td>
+    <td>&nbsp</td>
+    <td>&nbsp</td>
+    <td>&nbsp</td>
+  </tr>
+  <tr>
+    <td>&nbsp</td>
+    <td>&nbsp</td>
+    <td>&nbsp</td>
+    <td>&nbsp</td>
+    <td>&nbsp</td>
+  </tr>
+</table>
+
+    <div id="scores"></div>
+    <input type="button" id="reset" value="Retry" hidden="hidden" onclick="Reset();">
+  </div>
+  <!-- Created by Alex Pilugin 02.11.2016. -->
+</body>
+</html>
