@@ -4,13 +4,21 @@ var yPos = 20;
 var counter = 0;
 
 function onClick(){
-	counter++;
-	if(counter > 11){
-		counter = 0;
-	}
+
 	var hero = document.getElementById("hero");
 	hero.style.top = 0;
 	hero.style.left = 0;
+	
+	hero.className = "trans";
+	/* http://stackoverflow.com/questions/195951/change-an-elements-class-with-javascript */
+	//if(!(hero).className.match(/(?:^|\s)trans(?!\S)/) ) { hero.className += "trans"; }
+		
+	counter++;
+	if(counter > 11){
+		//if((hero).className.match(/(?:^|\s)trans(?!\S)/)){ hero.className.replace( /(?:^|\s)trans(?!\S)/g , '' ); }
+		if (hero.className === 'trans') { hero.className = ''; }
+		counter = 0;
+	}
 
 	var congratulation = document.getElementById("congratulation");
 
@@ -44,40 +52,40 @@ function onClick(){
   			break;
 		case 5:
 			hero.style.position = "absolute";
-				hero.style.top = "122px";
+			hero.style.top = "122px";
 			hero.style.left = "375px";
 			hero.style.transform = "scaleX(-1)";
 				break;
 		case 6:
 			hero.style.position = "absolute";
-				hero.style.top = "157px";
+			hero.style.top = "157px";
 			hero.style.left = "439px";
 				break;
 		case 7:
 			hero.style.position = "absolute";
-				hero.style.top = "190px";
+			hero.style.top = "190px";
 			hero.style.left = "395px";
 			hero.style.transform = "scaleX(1)";
 				break;
 		case 8:
 			hero.style.position = "absolute";
-				hero.style.top = "223px";
+			hero.style.top = "223px";
 			hero.style.left = "332px";
 				break;
 		case 9:
 			hero.style.position = "absolute";
-				hero.style.top = "256px";
+			hero.style.top = "256px";
 			hero.style.left = "367px";
 			hero.style.transform = "scaleX(-1)";
 				break;
 		case 10:
 			hero.style.position = "absolute";
-				hero.style.top = "298px";
+			hero.style.top = "298px";
 			hero.style.left = "443px";
 				break;
 		case 11:
 			hero.style.position = "absolute";
-				hero.style.top = "331px";
+			hero.style.top = "331px";
 			hero.style.left = "510px";
 			congratulation.style.display = "block";
 				break;

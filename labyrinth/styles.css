@@ -222,15 +222,6 @@ button {
 	top: 20px;
 	z-index:100;
 
-	-webkit-transition-property: top, left;
-    -moz-transition-property: top, left;
-    -o-transition-property: top, left;
-    transition-property: top, left;
-	-webkit-transition-duration: 0.3s; /* not working with ease; */
-	-moz-transition-duration: 0.3s;
-	-o-transition-duration: 0.3s;
-	transition-duration: 0.3s;
-
 }
 #hero:hover {
 	background-position: -537px 0px;
@@ -249,4 +240,15 @@ button {
 	color: red;
 	font-weight: 600;
 	padding-top: 20px;
+}
+
+.trans {
+	-webkit-transition-property: top, left;
+    -moz-transition-property: top, left;
+    -o-transition-property: top, left;
+    transition-property: top, left;
+	-webkit-transition-duration: 0.3s; /* not working with ease; */
+	-moz-transition-duration: 0.3s;
+	-o-transition-duration: 0.3s;
+	transition-duration: 0.3s;
 }
