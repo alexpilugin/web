@@ -1,0 +1,241 @@
+body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, input, textarea, blockquote {
+	margin: 0; padding: 0; border: 0;
+}
+body {
+	background: gray;
+}
+#container{
+	width:998px;
+	margin-left: auto;
+	margin-right: auto; 
+	box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+	background: black;
+	border-left: 3px solid black;
+	border-right: 3px solid black;
+}
+
+#header {
+	background: gray;
+	width:998px;
+	height: 382px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+#slider-mask {
+	width:998px;
+	height:200px;
+	z-index:100;
+	position:relative;
+	clear:both;
+}
+#slider-mask img {
+	width:998px;
+	height:341px;
+}
+#slider-wrapper {
+	background: gray;
+	width:998px;
+	height:200px;
+	position:absolute;
+	top:90px;
+}
+.nivo-controlNav {
+	display: none;
+}
+nav {
+	width:998px;
+	height: 40px;
+	background: black;
+	position:relative;
+	clear:both;
+}
+#menu-home,
+#menu-biography,
+#menu-filmography,
+#menu-links,
+#menu-signature,
+#menu-playBtn {
+	height:35px;
+	margin-left: 15px;
+	margin-top:3px;
+	position:relative;
+	display:block;
+	float:left;
+	background-color:transparent;
+	background-image:url("../images/menuTitles.svg");
+	z-index:200;
+}
+#menu-home {
+	width:75px;
+	background-position:5px 4px;
+}
+#menu-home:hover {
+	background-position:5px 37px;
+	cursor: pointer;
+}
+#menu-biography {
+	width:125px;
+	background-position:-65px 4px;
+}
+#menu-biography:hover {
+	background-position:-65px 37px;
+	cursor: pointer;
+}
+#menu-filmography {
+	width:140px;
+	margin-left: 25px;
+	background-position:-195px 4px;
+}
+#menu-filmography:hover {
+	background-position:-195px 37px;
+	cursor: pointer;
+}
+#menu-links {
+	width:55px;
+	margin-left: 20px;
+	background-position:-340px 4px;
+}
+#menu-links:hover {
+	background-position:-340px 37px;
+	cursor: pointer;
+}
+#menu-signature {
+	width:95px;
+	height:45px;
+	margin-left: 100px;
+	background-position:-408px 4px;
+	top:-2px;
+	right:60px;
+	position:absolute;
+}
+#menu-playBtn {
+	width:25px;
+	height:28px;
+	background-position:-414px 40px;
+	top:0px;
+	right:5px;
+	position:absolute;
+}
+#menu-playBtn:hover {
+	background-position:-442px 40px;
+	cursor: pointer;
+}
+#content {
+}
+#content-links {
+	margin:10px;
+}
+#content-biography {
+	margin-left:10px;
+	margin-right:10px;
+}
+#content-biography img {
+	margin-left:10px;
+	display:inline;
+}
+.textWrapRight {
+	float:right;
+	margin:10px;
+}
+.textWrapLeft {
+	float:left;
+	margin:10px;
+}
+.playBtn {
+	background-position:-414px 40px;
+}
+.stopBtn {
+	background-position:-470px 40px;
+}
+.hline {
+	width:998px;
+	height:2px;
+	display:block;
+	background:red;
+	position:relative;
+	clear:both;
+	z-index:300;
+}
+.kilt {
+	float:right;
+	margin:5px;
+	display:inline;
+}
+.textTitle {
+	color:red;
+	font-size: 24px; 
+	margin-bottom:15px;
+}
+.textSubTitle {
+	color:red;
+	font-size: 18px; 
+	margin-bottom:15px;
+}
+
+.list,.video1, .video2, .video3 {
+	margin-left:25px;
+	margin-right:10px;
+	float:left;
+}
+.text, .list {
+	color:#b8b8b8;
+	font-family: Helvetica, sans-serif; 
+	font-size: 16px; 
+	line-height: 22px;
+	margin-bottom:10px;
+}
+.whiteText {
+	color: white;
+	margin-bottom:10px;
+}
+.leftFlowText {
+	width:850px;
+	float:left;
+}
+.gallery_container { 
+	width:120px; 
+	margin: 0px auto 10px auto;
+	float: left;
+}
+.gallery_thumbnails { 
+	width: 120px; 
+	margin-left: 20px; 
+	float: left; 
+}
+.gallery_thumbnails a {
+	display: block;
+	height: 75px;
+	width: 75px;
+	float: left;
+	border: 1px solid #555;
+	margin: 0px 20px 20px 0px;
+}
+.gallery_thumbnails a:hover { 
+	border-color: #fff; 
+	cursor: pointer;
+}
+.gallery_thumbnails a.selected { 
+	border-color: #fff; 
+}
+.ref_block {
+	width:400px;
+	color: white;
+	font-size: 16px; 
+	margin-left:45px;
+	margin-right:20px;
+	float:left;
+}
+.ref_block a{
+	color: white;
+}
+.ref_block a:hover {
+	color: red;
+}
+.clear_both {
+	clear:both;
+}
+.footer {
+	text-align:center;
+	border-top: 2px red;
+}
