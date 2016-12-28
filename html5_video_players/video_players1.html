@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> A.Pilugins. Video Player. Absolute Position.</title>
+		<style>
+			#skin {
+				position: absolute;
+				left: 30px;
+				top: 30px;
+			}
+			#player {
+				position:absolute;
+				left: 44px;
+				top:50px;
+			}
+			#playbutton{
+				position:absolute;
+				left:45px;
+				top:293px;
+			}
+			#ffbutton {
+				position:absolute;
+				left:210px;
+				top:293px;
+			}
+			#rewindbtn {
+				position:absolute;
+				left:290px;
+				top:293px;
+			}
+		</style>
+		<script src = "js/video.js"></script>
+
+	</head>
+	<body onload = "init();">
+		<!-- video player skin -->
+		<div id = "skin">
+			<img src="images/skin.jpg" alt=”skin”>
+		</div>
+
+		<!-- video player -->
+		<div id = "player">
+			<video id = "video" poster="images/movie4Poster.jpg">
+				<source src="video/movie4.ogv" type="video/ogg">
+				<source src="video/movie4.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>	
+		</div>
+
+		<!-- play button -->
+		<div id = "playbutton">
+			<img id = "playbuttonImg" src="images/myPlay.png" alt="Play">
+		</div>
+		
+		<!-- fast forward button -->
+		<div id = "ffbutton">
+			<img id = "ffbuttonImg" src="images/ff.png" alt="Fast Forward">
+		</div>
+		
+		<!-- rewind button -->
+		<div id = "rewindbtn">
+			<img id = "rewindbtnImg" src="images/rewind.png" alt="Rewind">
+		</div>
+
+	</body>
+</html>
